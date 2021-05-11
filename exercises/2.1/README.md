@@ -1,0 +1,1 @@
+Exercício 2.1 -| git remote add origin | git remote -v | git push origin master |
