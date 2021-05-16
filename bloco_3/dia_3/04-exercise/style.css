@@ -1,0 +1,28 @@
+div:hover {
+  border: 10px solid coral;
+  width: fit-content;
+}
+
+
+div:nth-child(3) {
+  background: red;
+  max-width: fit-content;
+  
+}
+div:nth-child(4) {
+  background: blue;
+  max-width: fit-content;
+}
+div:nth-child(5) {
+  background: purple;
+  max-width: fit-content;
+  height: 4em;
+}
+div:nth-child(6) {
+  background: brown;
+  max-width: fit-content;
+}
+div:nth-child(7) {
+  background: grey;
+  max-width: fit-content;
+}
