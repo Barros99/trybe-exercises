@@ -45,7 +45,7 @@
              - document.getElementsByClassName()
              - document.getElementsByTagName()
 
-      Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+      
       Crie uma função que exiba o conteúdo de todas as tags <p> no console.
              */
       function textChanger(element) {
@@ -76,11 +76,19 @@
         }
       }
 
-      //   textChanger("p");
-      //   squareColorChanger("main-content");
-      //   redToWhite("center-content");
-      //   spellChecker("title");
-      toUpper('p')
+      function printP(element) {
+        let paragraph = document.getElementsByTagName(element);
+        for (const iterator of paragraph) {
+          console.log(iterator);
+        }
+      }
+
+      textChanger("p");
+      squareColorChanger("main-content");
+      redToWhite("center-content");
+      spellChecker("title");
+      toUpper("p");
+      printP("p");
     </script>
   </body>
 </html>
