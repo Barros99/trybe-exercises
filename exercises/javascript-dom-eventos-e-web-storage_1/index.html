@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito</h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+      /*
+             Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+             - document.getElementById()
+             - document.getElementsByClassName()
+             - document.getElementsByTagName()
+
+      Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+      Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+             */
+      function textChanger(element) {
+        return (document.getElementsByTagName(element)[0].innerText =
+          "Lol, Noob !!!");
+      }
+
+      function squareColorChanger(param) {
+        return (document.getElementsByClassName(
+          param
+        )[0].style.backgroundColor = "rgb(" + 76 + "," + 164 + "," + 109 + ")");
+      }
+      function redToWhite(param) {
+        return (document.getElementsByClassName(
+          param
+        )[0].style.backgroundColor = "white");
+      }
+
+      function spellChecker(params) {
+        document.getElementsByClassName(params)[0].innerText =
+          "Exercício 5.1 - Javascript";
+      }
+
+      function toUpper(element) {
+        let paragraph = document.getElementsByTagName(element);
+        for (const iterator of paragraph) {
+          iterator.style.textTransform = "uppercase";
+        }
+      }
+
+      //   textChanger("p");
+      //   squareColorChanger("main-content");
+      //   redToWhite("center-content");
+      //   spellChecker("title");
+      toUpper('p')
+    </script>
+  </body>
+</html>
