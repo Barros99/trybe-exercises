@@ -1,0 +1,27 @@
+div {
+  color: white;
+  max-width: fit-content;
+}
+div:hover {
+  border: 10px solid coral;
+}
+
+div:nth-child(3) {
+  background: red;
+}
+div:nth-child(4) {
+  background: blue;
+}
+div:nth-child(5) {
+  background: purple;
+  height: 4em;
+}
+div:nth-child(6) {
+  background: brown;
+}
+div:nth-child(7) {
+  background: grey;
+}
+div:nth-child(2n + 1) {
+  font-style: italic;
+}

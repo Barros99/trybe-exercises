@@ -1,0 +1,27 @@
+div {
+  position: absolute;
+  z-index: 3;
+  width: 170px;
+  margin-top: 1650px;
+  left: 70px;
+}
+
+.super-mario {
+  position: absolute;
+  z-index: 5;
+}
+.goomba {
+  position: absolute;
+  z-index: 4;
+}
+.baloon {
+  position: absolute;
+  z-index: 2;
+  margin-top: 1600px;
+}
+.bowser {
+  position: absolute;
+  z-index: 1;
+  left: 200px;
+  margin-top: 1600px;
+}
